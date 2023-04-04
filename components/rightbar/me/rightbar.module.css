@@ -1,0 +1,69 @@
+.today_stories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+.today_stories h3 {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: messina_bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.375rem;
+}
+.today_stories h3 .dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(26, 137, 23);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.today_stories .link a {
+  font-family: messina;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: rgb(37, 122, 0);
+}
+
+.today_stories .story {
+  display: flex;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.today_stories .story .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.today_stories .story .avatar {
+  position: relative;
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.today_stories .story .avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.today_stories .story .name {
+  font-family: messina;
+  font-size: 0.8125rem;
+  line-height: 1.538;
+  color: #292929;
+  text-shadow: 0.1px 0.1px 0px #292929;
+}
+
+.today_stories .story .title h4 {
+  font-family: messina_black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}

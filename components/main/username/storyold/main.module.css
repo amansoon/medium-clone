@@ -1,0 +1,588 @@
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    background-color: white;
+  }
+  
+  .section .inner {
+    position: relative;
+    width: 100%;
+    max-width: 692px;
+    min-width: 100px;
+    display: block;
+    margin: 0 2rem;
+  }
+  
+  .stories_section {
+    padding-bottom: 4rem;
+  }
+  
+  /* =========== HEADER ============ */
+  
+  .topbar {
+    width: 100%;
+    background-color: white;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .topbar .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .topbar .info {
+    display: flex;
+  }
+  
+  .topbar .avatar {
+    position: relative;
+    flex-shrink: 0;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  
+  .topbar .avatar img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .topbar .about :is(.author, .list) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .topbar .author {
+    margin-bottom: 0.25rem;
+    line-height: 1.5rem;
+  }
+  
+  .topbar .author .name {
+    font-family: messina;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #292929;
+  }
+  
+  .topbar .author .btn {
+    align-self: flex-start;
+    display: none;
+    padding: 0px 8px 1px;
+    font-family: messina_thin;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    border-radius: 99em;
+    border: 1px solid rgb(26, 137, 23);
+    margin-left: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .topbar .author .btn.outline {
+    color: rgb(26, 137, 23);
+    text-shadow: 0.1px 0.1px 0 rgb(26, 137, 23);
+    background-color: white;
+  }
+  
+  .topbar .author .btn.bg {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1px 0.1px 0 rgb(255, 255, 255);
+    background-color: rgb(26, 137, 23);
+  }
+  
+  .topbar .list p {
+    font-family: messina;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #757575;
+  }
+  
+  .topbar .list .dot {
+    padding: 0 0.5rem;
+    color: #757575;
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .actions ul {
+    display: flex;
+  }
+  
+  .actions ul li {
+    padding-right: 0.25rem;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .icon {
+    display: block;
+    padding: 0.5rem 0.125rem;
+  }
+  
+  .actions .menu {
+    margin-left: 1rem;
+  }
+  
+  .actions .menu path {
+    fill: #757575;
+  }
+  
+  .actions .btn:hover path {
+    fill: #292929;
+  }
+  
+  
+  /* ========== STORIES SECTION ========== */
+  
+  .header .title {
+    padding-bottom: 1.5rem;
+    padding-top: 0.25rem;
+  }
+  .header h2 {
+    font-family: messina_black;
+    font-size: 2rem;
+    letter-spacing: -0.016em;
+    line-height: 2.5rem;
+    color: #292929;
+  }
+  
+  .header .actions {
+    display: none;
+    padding-bottom: 1rem;
+  }
+  
+  .header .hr {
+    padding-bottom: 1rem;
+  }
+  
+  /* ========= topbar ======= */
+  
+  .topbar {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .topbar .first {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .topbar .about {
+    display: flex;
+  }
+  
+  .topbar .avatar {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .topbar .avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .topbar .content {
+    display: inline;
+    flex-direction: column;
+  }
+  
+  .topbar .author {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 0.25rem;
+  }
+  
+  .topbar .author .name {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-family: messina;
+    font-size: 1rem;
+    color: #191919;
+  }
+  
+  .topbar .author .follow {
+    display: none;
+    padding: 0.0625rem 0.5rem;
+  
+    font-family: messina_thin;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.1px;
+    color: white;
+    border: 1px solid #1a8917;
+    background-color: #1a8917;
+    border-radius: 1rem;
+  
+    text-shadow: 0.15px 0.15px 0 #ffffff;
+  
+    margin-left: 0.75rem;
+  }
+  .topbar .author .follow.true {
+    color: #1a8917;
+    text-shadow: 0.15px 0.15px 0 #1a8917;
+    background-color: transparent;
+  }
+  
+  .topbar .info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .topbar .info span {
+    display: flex;
+    align-items: center;
+    font-family: messina;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #757575;
+  }
+  
+  .topbar .dot {
+    padding: 1.2px 0.35rem;
+  }
+  .topbar .dot span {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .topbar .play {
+    cursor: pointer;
+  }
+  .topbar .play .icon {
+    font-size: 14px;
+    padding: 1px;
+    margin-right: 3px;
+  }
+  
+  .topbar .play .text {
+    color: rgb(38, 143, 0);
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  .topbar .play svg path {
+    fill: rgb(38, 143, 0);
+    transition: all 0.25s ease-out;
+  }
+  
+  .topbar .play .text {
+    color: rgb(32, 120, 0);
+  }
+  .topbar .play:hover svg path {
+    fill: rgb(32, 120, 0);
+  }
+  
+  .topbar .actions {
+    display: flex;
+    /* border: 1px solid rgb(223, 223, 223); */
+  }
+  
+  .topbar .first .actions .btn_list {
+    display: flex;
+  }
+  
+  .topbar .first .actions .btn_div {
+    padding-right: 0.25rem;
+  }
+  .topbar .first .actions .btn_div:nth-last-child(2) {
+    padding-right: 0;
+  }
+  .topbar .first .actions .btn_div:last-child {
+    padding-right: 0;
+    margin-left: 1.75rem;
+    margin-right: 0.25rem;
+  }
+  
+  .topbar .first .actions button {
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .topbar .first .actions .icon {
+    display: block;
+    padding: 0.5rem 0.125rem;
+  }
+  
+  .topbar .first .actions button path {
+    fill: #a8a8a8;
+  }
+  
+  .topbar .first .actions button:hover path {
+    fill: #080808;
+  }
+  
+  .topbar .first .actions .btn_div:last-child path {
+    fill: #7e7e7e;
+  }
+  .topbar .first .actions .btn_div:last-child button:hover path {
+    fill: #080808;
+  }
+  
+  .topbar .first .actions .more_btn {
+    margin-left: 1rem;
+  }
+  .topbar .first .actions .more_btn path {
+    fill: #7e7e7e;
+  }
+  
+  .topbar .second {
+    display: none;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  
+  .topbar .second .btn_div:not(.saveStory) {
+    padding-right: 0.75rem;
+  }
+  
+  .topbar .second .btn_div button {
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .topbar .second .btn_div:not(.saveStory) button .icon {
+    display: block;
+    padding: 0.5rem 0.125rem;
+  }
+  
+  .topbar .second .saveStory {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .topbar .second .saveStory button {
+    display: flex;
+    align-items: center;
+  
+    font-family: messina;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+    color: #757575;
+  
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.625rem;
+    padding-right: 0.9375rem;
+  
+    border-radius: 2rem;
+  
+    border: 1px solid rgba(230, 230, 230);
+  }
+  
+  .topbar .second .saveStory button span {
+    margin-right: 0.5rem;
+  }
+  
+  .topbar .second .saveStory path {
+    fill: #757575;
+  }
+  
+  .topbar .second .saveStory button:hover {
+    border: 1px solid rgb(209, 209, 209);
+  }
+  
+  .topbar .second .btn_div:not(.saveStory) button:hover path {
+    fill: #080808;
+  }
+  
+  .main section .title h1 {
+    /* margin-bottom: 0.25rem; */
+  }
+  .main section .title h2 {
+    font-weight: lighter;
+    font-size: 1.375rem;
+    font-family: messina;
+    line-height: 1.2727;
+    color: #757575;
+  }
+  .main section .title div:first-child {
+    padding-bottom: 0.75rem;
+  }
+  
+  .main section .content {
+  }
+  .main section .content p {
+    font-family: var(--font-p);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: -0.1px;
+    color: #292929;
+  
+    margin-top: 2.5rem;
+  }
+  
+  .main section .content p:first-child span {
+    float: left;
+    line-height: 54.8px;
+    font-size: 66px;
+    letter-spacing: -0.1px;
+    margin-right: 12px;
+  
+    position: relative;
+    top: 5px;
+  }
+  
+  .main section .content h2 {
+    font-family: messina_black;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #292929;
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .rightbar {
+      width: 280px;
+    }
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .layout {
+      flex-direction: column;
+    }
+    .leftbar {
+      display: none;
+    }
+    .rightbar {
+      display: none;
+    }
+    .main {
+      padding-top: 2rem;
+    }
+    .topbar .author .follow {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 728px) {
+    .section {
+      margin: 0 1.5rem;
+    }
+  
+    .topbar .first .actions .btn_list {
+      display: none;
+    }
+  
+    .topbar .second {
+      display: flex;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ========= MEDIA ========= */
+  
+  @media screen and (max-width: 1080px) {
+    .topbar {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .topbar .author .btn {
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 728px) {
+    .section .inner {
+      margin: 0 1.5rem;
+    }
+  
+    .topbar .actions ul {
+      display: none;
+    }
+    
+    .header .actions {
+      display: flex;
+    }
+    .header .title {
+      padding-bottom: 1rem;
+    }
+    .header h2 {
+      font-size: 1.375rem;
+      line-height: 1.75rem;
+    }
+    .header .hr {
+      border-top: 1px solid rgba(230, 230, 230, 1);
+    }
+  
+  
+    /* -- stories media -- */
+    .story .body > .right {
+      margin-left: 1.5rem;
+    }
+  
+    .story .body h2 {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+  
+    .story .body p {
+      display: none;
+    }
+  
+    .story .thumbnail {
+      width: 56px;
+      height: 56px;
+    }
+  
+    .story .title {
+      padding-bottom: 0;
+    }
+  
+    .story .footer {
+      padding: 1rem 0;
+    }
+  
+    .story .footer .info {
+      display: none;
+    }
+  
+  
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 680px) {
+  }
+  
+  @media screen and (max-width: 552px) {
+  }
+  
+  @media screen and (max-width: 488px) {
+  }
+  
+  @media screen and (max-width: 348px) {
+  }
+  

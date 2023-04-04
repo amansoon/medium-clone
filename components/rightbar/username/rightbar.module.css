@@ -1,0 +1,366 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.user a {
+  display: inline-block;
+}
+
+.user .avatar {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.user img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user .username {
+  font-family: messina_semiBold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #292929;
+  letter-spacing: 0;
+  margin-top: 1rem;
+}
+
+.user .username a {
+  width: 100%;
+  color: #292929;
+}
+
+.user .followers {
+  font-family: messina;
+  font-size: 0.975rem;
+  color: #757575;
+  margin-top: 0.25rem;
+}
+.user .followers button {
+  cursor: pointer;
+}
+
+.user .about {
+  margin-top: 0.75rem;
+}
+
+.user .about p {
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.action .link {
+  font-family: messina_thin;
+  font-size: 00.8125rem;
+  color: #1a8917;
+  text-shadow: 0.1px 0.1px 0px #1a8917;
+}
+
+.action .btn {
+  font-family: messina_semiBold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: #1a8917;
+  color: white;
+  border-radius: 0.5rem;
+  border-radius: 99em;
+  border: 0;
+  cursor: pointer;
+}
+
+.action .follow {
+  padding: 7px 16px 9px 16px;
+  color: white;
+  border: 1px solid #1a8917;
+}
+.action .follow.true {
+  color: #1a8917;
+  background-color: transparent;
+}
+
+.action .email {
+  margin-left: 0.5rem;
+}
+
+.action .btn svg path {
+  stroke: white;
+}
+
+.action .btn svg rect {
+  stroke: rgb(255, 255, 255);
+}
+
+/* following */
+
+.user .following {
+  display: block;
+  margin-top: 2.5rem;
+}
+
+.following ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.following ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.following .title {
+  font-family: messina_bold;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  color: #292929;
+}
+
+.following .info {
+  display: flex;
+  align-items: center;
+}
+
+.following .avatar {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.following .avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.following .menu {
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  background-color: transparent;
+}
+
+.following .menu path {
+  fill: #757575;
+}
+
+.following .menu:hover {
+  background-color: whitesmoke;
+}
+
+.following .menu:hover path {
+  fill: #292929;
+}
+
+.following :is(.name, .seeAll) {
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  text-shadow: 0.2px 0.2px 0px #757575;
+  color: #757575;
+  cursor: pointer;
+}
+
+.following .info:hover .name {
+  color: #292929;
+  text-decoration: underline;
+  text-shadow: 0.2px 0.2px 0px #292929;
+}
+
+.following .seeAll:hover {
+  color: #292929;
+  text-shadow: 0.2px 0.2px 0px #292929;
+}
+
+
+
+/* ======== saved lists ======== */
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.lists .title {
+  font-family: messina;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #292929;
+  margin-bottom: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.list .thumbnails {
+  position: relative;
+  overflow: hidden;
+  width: 93px;
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.list .thumbnail {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  box-sizing: content-box;
+  flex: 0 0 auto;
+  border-radius: 2px;
+}
+.list .thumbnail img {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.list .thumbnail:nth-child(1) {
+  z-index: 3;
+  border-right: 3px solid white;
+}
+.list .thumbnail:nth-child(2) {
+  margin-left: -24px;
+  z-index: 2;
+  border-right: 3px solid white;
+}
+.list .thumbnail:nth-child(3) {
+  margin-left: -36px;
+  z-index: 1;
+}
+
+
+
+.list .info {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.list h2 {
+  all: unset;
+  width: 100px;
+  max-height: 1.25rem;
+  font-family: messina;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #292929;
+  /* ellipsis */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list p {
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  color: #292929;
+
+}
+
+.lists .btn {
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  text-shadow: 0.2px 0.2px 0px #757575;
+  color: #757575;
+  cursor: pointer;
+}
+
+.lists .btn:hover {
+  color: #292929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.more_stories {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_stories h3 {
+  font-family: messina_bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.story {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.story .content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+.story .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.story .user .avatar {
+  all: unset;
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+.story .user span {
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.538;
+  color: #292929;
+  text-shadow: 0.1px 0.1px 0px #292929;
+}
+
+.story h4 {
+  font-family: messina_black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.story .thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.story .thumbnail img {
+  object-fit: cover;
+}
+
+
+

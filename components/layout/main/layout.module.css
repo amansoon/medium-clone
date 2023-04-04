@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.main_inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}

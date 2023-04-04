@@ -1,0 +1,236 @@
+.container {
+  position: relative;
+}
+
+/* HIGHLIGHT MENU */
+
+.highlightMenu {
+  position: absolute;
+  top: 100;
+  left: 300;
+  z-index: 600;
+
+  display: block;
+}
+
+.highlightMenu.active {
+  display: block;
+  /* display: none; */
+}
+
+.highlightMenu .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  background-image: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), #262625);
+  background-repeat: repeat-x;
+  border-radius: 5px;
+}
+
+.highlightMenu .buttonSet {
+  display: flex;
+  align-items: center;
+}
+
+.highlightMenu .buttonSet.hide {
+  display: none;
+}
+
+.highlightMenu .btn {
+  line-height: 46px;
+  height: 44px;
+  margin: 0 6px;
+  cursor: pointer;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.highlightMenu .btn path {
+  fill: white;
+}
+
+.highlightMenu .btn.active path {
+  fill: #b5e5a4;
+}
+
+.highlightMenu .btn.disabled path {
+  fill: #7c7c7c;
+}
+
+.highlightMenu .separator {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  margin: 0 6px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 1.4;
+}
+
+.highlightMenu .linkInput {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.highlightMenu .linkInput input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+  padding: 13px 40px 11px 10px;
+  border: none;
+  outline: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* ============= EDITOR ============== */
+
+.editor {
+  position: relative;
+  margin-top: 100px;
+
+  color: rgba(0,0,0,.84);
+}
+
+/* paragraph style */
+
+.editor p {
+  font-family: "source-serif" !important;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+.editor p + p {
+  margin-top: 30px;
+}
+
+.editor h2 + p {
+  margin-top: 31px;
+}
+
+.editor h3 + p {
+  margin-top: 39px;
+}
+
+/* heading 2 style */
+
+.editor h2 {
+  font-family: "merriweather-semiBold" !important;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+
+  margin-top: 53px;
+}
+
+.editor p + h2 {
+  margin-top: 56px;
+}
+
+.editor h2 + h2 {
+  margin-top: 53px;
+}
+
+.editor h3 + h2 {
+  margin-top: 31px;
+}
+
+/* heading 2 style */
+
+.editor h3 {
+  font-family: "merriweather-semiBold" !important;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
+  color: rgba(0, 0, 0, 0.84);
+
+  margin-top: 39px;
+}
+
+.editor p + h3 {
+  margin-top: 30px;
+}
+
+.editor h2 + h3 {
+  margin-top: 31px;
+}
+
+.editor h3 + h3 {
+  margin-top: 39px;
+}
+
+
+/* ======== BLOCKQUOTE STYLING =====  */
+
+.editor blockquote {
+  padding-left: 20px;
+  padding-bottom: 2px;
+
+  font-family: "source-serif-italics" !important;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+
+  margin-top: 29px;
+  margin-left: -23px;
+  border-left: 3px solid rgba(0,0,0,.84);
+
+}
+
+.editor blockquote + blockquote {
+  padding-top: 27px;
+  margin-top: 0;
+}
+
+
+/* ======== LINK ========== */
+
+.editor a {
+  text-decoration: solid;
+  color: rgb(0, 179, 179);
+}
+
+/* ======== bold ======== */
+.editor strong {
+  font-weight: normal;
+  font-family: 'source-serif-semiBold';
+}
+
+.editor em strong {
+  font-weight: normal;
+  font-family: 'source-serif-semiBold-italics';
+}
+
+.editor blockquote strong {
+  font-weight: normal;
+  font-family: 'source-serif-semiBold-italics';
+}
+
+/* ======== italic ======== */
+.editor em {
+  font-family: 'source-serif-italics';
+}
+
+.editor strong em {
+  font-family: 'source-serif-semiBold-italics';
+}
+
+.editor :is(h2, h3) :is(strong, em) {
+  font: inherit;
+}

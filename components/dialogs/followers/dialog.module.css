@@ -1,0 +1,202 @@
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  scroll-behavior: smooth;
+
+  animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running animateDialog;
+}
+@keyframes animateDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.wrapper {
+  padding: 4rem 2.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform-origin: center bottom;
+
+  animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running animateWrapper;
+}
+@keyframes animateWrapper {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.content {
+  position: relative;
+  max-width: 550px;
+}
+
+
+
+
+.cancel {
+  position: absolute;
+  right: -100px;
+  top: -10px;
+}
+.cancel .btn {
+  cursor: pointer;
+  fill: #292929;
+  border-radius: 50%;
+  padding: 0.125rem;
+  border: 1px solid #292929;
+}
+
+
+
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.heading h2 {
+  text-align: center;
+  font-weight: normal;
+  font-family: messina_bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #292929;
+}
+
+.follower {
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follower .info {
+  display: flex;
+}
+
+.follower .avatar {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+}
+
+.follower .avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.follower .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.follower .intro h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: messina_bold;
+  color: #292929;
+  line-height: 1.25rem;
+}
+
+.follower .intro p {
+  font-weight: normal;
+  font-size: 0.8rem;
+  font-family: messina;
+  color: #757575;
+  line-height: 1.25rem;
+}
+
+.follower .actions {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 3rem;
+}
+
+.follower .actions .btn {
+  padding: 4px 12px 6px;
+
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 99em;
+  border: 1px solid rgb(26, 137, 23);
+}
+
+.follower .actions .follow {
+  color: rgb(26, 137, 23);
+  background-color: rgb(255, 255, 255);
+}
+
+.follower .actions .following {
+  color: white;
+  background-color: rgb(26, 137, 23);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer button {
+  display: inline-block;
+  padding: 4px 12px 6px;
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 99em;
+  cursor: pointer;
+  color: #292929;
+}
+
+
+/* =========== MEDIA ========= */
+
+@media screen and (max-width: 848px) {
+  .cancel {
+    right: 0px;
+    top: -50px ;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 4rem 1.5rem;
+  }
+  .follower .avatar {
+    margin-right: 1rem;
+  }
+  .follower .actions {
+    margin-left: 1rem;
+  }
+  
+}

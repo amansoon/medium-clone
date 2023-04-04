@@ -1,0 +1,313 @@
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.section .inner {
+  position: relative;
+  width: 100%;
+  max-width: 692px;
+  min-width: 100px;
+  display: block;
+  margin: 0 2rem;
+}
+
+.tabbar {
+  position: relative;
+  margin-top: 3.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.tabbar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.tabbar .header .links {
+  display: flex;
+}
+
+.tabbar .header a {
+  min-width: max-content;
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: black;
+  border-radius: 99em;
+  padding: 7px 16px 9px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.tabbar .header .newList {
+  color: white;
+  border-color: rgb(26, 137, 23);
+  background-color: rgb(26, 137, 23);
+}
+.tabbar .header .newList:hover {
+  color: white;
+  border-color: rgb(30, 128, 26);
+  background-color: rgb(30, 128, 26);
+}
+
+.tabbar h1 {
+  max-height: 3.25rem;
+  font-family: messina_black;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  letter-spacing: 0;
+}
+
+.scroller {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 rgb(230 230 230);
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: red;
+}
+
+.scroller::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.scroller::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scroller::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 5px;
+  border: 0px solid transparent;
+}
+
+.scroller_items {
+  width: auto;
+  display: flex;
+  align-items: center;
+
+  padding-top: 2px;
+}
+
+.tab {
+  min-width: max-content;
+  display: flex;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+  border-bottom: 1px solid transparent;
+}
+
+.tab:last-child {
+  margin-right: 3.125rem;
+}
+
+.tab.active {
+  border-bottom: 1px solid #292929;
+}
+
+.tab .link {
+  all: unset;
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: capitalize;
+  color: #757575;
+  cursor: pointer;
+}
+.tab .link.active {
+  color: #292929;
+}
+.tab .link:hover {
+  color: #292929;
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  line-height: 0;
+}
+.arrow.right {
+  right: 0;
+  bottom: 12px;
+  padding-left: 2.625rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+.arrow.left {
+  left: 0px;
+  bottom: 12px;
+  padding-right: 2.625rem;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+.arrow .btn {
+  all: unset;
+  background-color: white;
+  cursor: pointer;
+}
+
+.arrow .gradient {
+  display: inline-block;
+}
+
+/* =========== PANEL =========== */
+
+.tabpanel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.card {
+  padding: calc(1.5rem - 1px) 0;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgb(230 230 230);
+}
+
+.card .body {
+  padding: 0 1.25rem;
+}
+
+.card :is(.about, .about a) {
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.card .about a:hover {
+  text-decoration: underline;
+}
+
+.card .text :is(p, mark) {
+  font-family: charter;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.003em;
+  color: rgba(41, 41, 41, 1);
+  margin-top: 1em;
+}
+
+.card .text mark {
+  background-color: rgba(26, 137, 23, 0.1)
+}
+
+@media screen and (max-width: 902px) {
+  .card .text :is(p, mark) {
+    font-size: 1.125rem;
+    letter-spacing: -0.003em;
+    line-height: 1.75rem;
+    margin-top: 1em;
+    /* margin-bottom: -0.46em; */
+  }
+}
+
+
+
+.card .footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0;
+}
+
+.card .footer .icon  {
+   display: flex;
+   fill: #757575;
+}
+
+.card .footer button {
+  all: unset;
+  cursor: pointer;
+  padding: calc(3.1px / 2) 0;
+}
+
+
+
+
+
+
+
+
+/* =========== FOOTER =========== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+}
+
+.footer p {
+  font-family: messina;
+  font-size: 14px;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.footer a p {
+  color: green;
+}
+
+@media screen and (max-width: 728px) {
+  .section .inner {
+    margin: 0 1.5rem;
+  }
+  .tabbar {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tabbar h1 {
+    max-height: 3.25rem;
+    font-family: messina_black;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+ 
+}
+
+@media screen and (max-width: 552px) {
+}
+
+@media screen and (max-width: 488px) {
+  
+
+}
+
+@media screen and (max-width: 348px) {
+  .tabpanel a {
+    width: 100%;
+  }
+
+ 
+}
+
+/* media */

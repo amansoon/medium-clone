@@ -1,0 +1,178 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.user a {
+  display: inline-block;
+}
+
+.user .avatar {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.user img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user .username {
+  font-family: messina_semiBold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #292929;
+  letter-spacing: 0;
+  margin-top: 1rem;
+}
+
+.user .username a {
+  width: 100%;
+  color: #292929;
+}
+
+.user .followers {
+  font-family: messina;
+  font-size: 0.975rem;
+  color: #757575;
+  margin-top: 0.25rem;
+}
+.user .followers button {
+  cursor: pointer;
+}
+
+.user .about {
+  margin-top: 0.75rem;
+}
+
+.user .about p {
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.action .link {
+  font-family: messina_thin;
+  font-size: 00.8125rem;
+  color: #1a8917;
+  text-shadow: 0.1px 0.1px 0px #1a8917;
+}
+
+.action .btn {
+  font-family: messina_semiBold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: #1a8917;
+  color: white;
+  border-radius: 0.5rem;
+  border-radius: 99em;
+  border: 0;
+  cursor: pointer;
+}
+
+.action .follow {
+  padding: 7px 16px 9px 16px;
+  color: white;
+  border: 1px solid #1a8917;
+}
+.action .follow.true {
+  color: #1a8917;
+  background-color: transparent;
+}
+
+.action .email {
+  margin-left: 0.5rem;
+}
+
+.action .btn svg path {
+  stroke: white;
+}
+
+.action .btn svg rect {
+  stroke: rgb(255, 255, 255);
+}
+
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.stories .heading {
+  font-family: messina_semiBold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.story {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.story .content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+.story .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.story .avatar {
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.story .avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.story .author span {
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.538;
+  color: #292929;
+  text-shadow: 0.1px 0.1px 0px #292929;
+}
+
+.story h2 {
+  font-family: messina_black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+.story .thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.story .thumbnail img {
+  object-fit: cover;
+}
+
+
+

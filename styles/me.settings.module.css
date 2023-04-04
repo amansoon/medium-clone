@@ -1,0 +1,475 @@
+.container {
+  width: 100%;
+  min-height: 150vh;
+
+}
+
+.site_wrapper {
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* =========== HEADER ============ */
+
+.header {
+  position: relative;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  height: 65px;
+  display: block;
+  background-color: white;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.header .content {
+  position: absolute;
+  top: 0;
+  box-sizing: content-box;
+  position: relative;
+  height: 65px;
+  max-width: 1032px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+
+.header .metabar {
+  display: flex;
+  align-items: center;
+}
+
+.header .shortLogo {
+  display: none;
+}
+
+.header .fullLogo {
+  display: block;
+}
+
+.header .icon path {
+  fill: #757575;
+}
+
+.header .icon:hover path {
+  fill: rgba(0, 0, 0, 0.84);
+}
+
+.header label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.header label input {
+  width: 1px;
+  height: 37px;
+  font-family: inherit;
+  font-size: 0.9375rem; /* 10px */
+  color: rgba(0, 0, 0, 0.84);
+  vertical-align: middle;
+  padding-left: 1px;
+  border: 0;
+  outline: 0;
+
+  transition: all 0.125s ease-out;
+}
+
+.header label input:focus {
+  width: 200px;
+  padding-left: 1rem;  
+  padding-right: 0.5rem;       
+}
+
+.header label:hover .icon path {
+  fill: rgba(0, 0, 0, 0.84);
+}
+
+.header .link {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #000000;
+}
+.header .btn:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.header .btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.header .link.search {
+  display: none;
+}
+.header .link.upgrade {
+  padding: 0 0.875rem;
+  height: 32px;
+  line-height: 30px;
+
+  font-family: messina;
+  font-family: inherit;
+
+  font-size: 0.875rem;
+  border-radius: 99em;
+  border: 1px solid #757575;
+}
+.header .link.upgrade:hover {
+  border: 1px solid #292929;
+}
+
+.header .avatar {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.header .avatar img{
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+/* ======== SETTINGS=========== */
+
+.settings {
+  max-width: 1040px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding-top: 3.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  
+  /* background-color: rgb(245, 245, 245); */
+}
+
+
+.settingsNav {
+  position: relative;
+  flex-shrink: 0;
+  width: 265px;
+  height: auto;
+  box-sizing: content-box;
+  padding-right: 1.25rem;
+  /* background-color: rgb(255, 252, 252); */
+}
+.stickyNav {
+  position: fixed;
+  top: 80px;
+  width: 265px;
+}
+
+
+.settingsMain {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 760px;
+  height: 300vh;
+  min-height: 50px;
+  background-color: white;
+}
+
+
+.settingsNav .title {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  padding-bottom: 1.25rem;
+}
+
+.settingsNav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsNav ul li {
+  padding-bottom: 1.25rem;
+}
+
+.settingsNav .text {
+  font-family: inherit;
+  font-size: 1.15rem;
+  line-height: 1.52;
+  letter-spacing: 0.3px;
+  color: #757575;
+}
+
+.settingsNav .text span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.settingsNav .footer {
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.settingsNav .footer .items_list {
+  padding-top: 0.625rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.settingsNav .footer .link {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.975rem;
+  line-height: 1.4;
+}
+.settingsNav .footer .link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+
+/* ========= setting main ============ */
+
+.settingsMain .section {
+  margin-bottom: 3.125rem;
+}
+
+
+.settings .section .heading {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+
+.settings .section .heading_content {
+  margin-bottom: 0.55rem;
+}
+
+
+.settingsMain .section h2 {
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: rgba(0,0,0,.84);
+}
+
+.settingsMain .listItem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1.875rem;
+  padding-bottom: 2rem;
+  overflow: auto;
+}
+
+.settingsMain .listItem_content {
+  max-width: 480px ;
+  width: 100%;
+  margin-right: 0.625rem;
+}
+@media screen and (max-width: 766px) {
+  .settingsMain .listItem_content {
+    padding-bottom: 1rem;
+  }
+}
+
+
+.settingsMain .listItem .body {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.settingsMain .listItem .title {
+  font-family: inherit;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgba(0,0,0,.84)!important;
+}
+
+
+.settingsMain .listItem label {
+  display: flex;
+}
+
+.settingsMain .listItem label span {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(0,0,0,.84);
+  margin-right: 0.625rem;
+}
+
+.settingsMain .listItem input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.125rem;
+  color: rgba(0,0,0,.84);
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.settingsMain .listItem input:disabled {
+  color: rgba(0,0,0,.84);
+  background-color: transparent;
+}
+
+
+
+.settingsMain .listItem table {
+  table-layout: auto;
+  /* margin-right: auto; */
+}
+
+.settingsMain .listItem tbody {
+  display: table-row-group;;
+}
+
+
+.settingsMain .listItem table td {
+  font-family: inherit;
+  font-size: 1.125rem;
+  color: rgba(0,0,0,.84);
+}
+
+.settingsMain .listItem table td:first-child {
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(0,0,0,.84);
+  padding-bottom: 0.5rem;
+  padding-right: 0.625rem;
+}
+
+.settingsMain .listItem table input{
+  margin-bottom: 0;
+}
+
+.settingsMain .listItem table tr:nth-child(2)  td{
+  padding-top: 0.4rem;
+}
+
+.settingsMain .listItem table tr:nth-child(3) td:first-child{
+  padding-bottom: 0;
+}
+
+.settingsMain .listItem .text {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: rgba(0,0,0,.76)!important;
+}
+
+.settingsMain .listItem .text .btn {
+  all: unset;
+  display: block;
+  text-decoration: underline;
+  color:rgba(0,0,0,.54);
+  margin-top: 0.625rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.settingsMain .listItem .text .btn:hover {
+  color: rgb(219, 34, 34);
+}
+
+
+.settingsMain .listItem_control .btn {
+  all: unset;
+  box-sizing: border-box;
+  height: 37px;
+  font-family: inherit;
+  font-size: 1rem ;
+  line-height: 2.125rem;
+  color: rgba(0,0,0,.54);
+  padding: 0 1rem;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 99em;
+  cursor: pointer;
+}
+
+.settings .listItem_control .btn:hover {
+  border: 1px solid rgba(0,0,0,.5);
+}
+
+.settingsMain .listItem_control .btnSet {
+  display: flex;
+}
+.settingsMain .listItem_control .btnSet .btn:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.settingsMain .listItem_control .btnSet .btn {
+  margin-right: 0.5rem;
+}
+
+.settingsMain .listItem_control .btn.save {
+  color: #1a8917;
+  border-color: #1a8917;
+}
+
+
+
+/* email section */
+
+.settingsMain .section.email .listItem input {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1198px) {
+  .settingsNav {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .header  {
+    height: 56px;
+  }
+  .header .content {
+    height: 56px;
+  }
+  .header .shortLogo {
+    display: block;
+  }
+  .header .fullLogo {
+    display: none;
+  }
+  .header .bookmark {
+    display: none;
+  }
+  .header .upgrade {
+    display: none;
+  }
+  .header :is(.link, .btn:not(:last-of-type)) {
+    margin-right: 0.625rem !important;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .header label {
+    display: none;
+  }
+  .header .link.search {
+    display: inline-block;
+  }
+}

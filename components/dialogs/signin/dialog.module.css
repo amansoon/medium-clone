@@ -1,0 +1,194 @@
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  scroll-behavior: smooth;
+
+  animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running
+    animateDialog;
+}
+@keyframes animateDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 678px;
+  min-height: 695px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px;
+  transform-origin: center bottom;
+  animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running
+    animateWrapper;
+}
+@keyframes animateWrapper {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cancel {
+  position:absolute ;
+  top: 20px;
+  right: 20px;
+}
+
+.cancel button {
+  padding: 0.125rem;
+  border: 1px solid #757575;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #292929;
+}
+
+.cancel button:hover {
+  border: 1px solid #292929;
+}
+
+
+.signin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.signin h2 {
+  font-family: gt_super_light;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: rgba(8, 8, 8, 1);
+
+  margin-bottom: 3rem;
+}
+
+
+.control {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.control :is(input, button) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.control input {
+  width: 100%;
+  color: #292929;
+  padding: 0.5rem 1.25rem;
+  outline: 0; 
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 99em;
+}
+
+.control input::placeholder {
+  color: #757575;
+}
+
+.control input:focus {
+  border: 1px solid #292929;
+}
+
+.control button {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #292929;
+  padding: 0.5rem 0;
+  border-radius: 99em;
+  border: 1px solid #292929;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.control.action {
+  margin-bottom: 1rem;
+}
+
+.terms {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.terms p {
+  font-family: messina;
+  font-size: 0.775rem;
+  line-height: 1.125rem;
+  color: #757575;
+}
+
+@media screen and (max-width: 902px) {
+  .wrapper {
+    height: 100%;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    padding-inline: 1.5rem;
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .signin form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control {
+    width: 100%;
+  }
+
+  .control input {
+    font-size: 0.9rem;
+  }
+
+  .control button {
+    font-size: 0.95rem;
+  }
+
+}

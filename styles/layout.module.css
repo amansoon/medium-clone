@@ -1,0 +1,27 @@
+.container {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container.dialog {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1504px;
+  height: auto;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .layout {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,339 @@
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 692px;
+  margin: 0 2rem;
+}
+
+.story_section {
+  height: 200vh;
+}
+
+.main header {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.main header .first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+
+.main header .about {
+  display: flex;
+}
+
+.main header .avatar {
+  position: relative;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.main header .avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main header .content {
+  display: inline;
+  flex-direction: column;
+}
+
+.main header .author {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.main header .author .name {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-family: messina;
+  font-size: 1rem;
+  color: #191919;
+}
+
+.main header .author .follow {
+  display: none;
+  padding: 0.0625rem 0.5rem;
+
+  font-family: messina_thin;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.1px;
+  color: white;
+  border: 1px solid #1a8917;
+  background-color: #1a8917;
+  border-radius: 1rem;
+
+  text-shadow: 0.15px 0.15px 0 #ffffff;
+
+  margin-left: 0.75rem;
+}
+.main header .author .follow.true {
+  color: #1a8917;
+  text-shadow: 0.15px 0.15px 0 #1a8917;
+  background-color: transparent;
+}
+
+.main header .info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main header .info span {
+  display: flex;
+  align-items: center;
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #757575;
+}
+
+.main header .dot {
+  padding: 1.2px 0.35rem;
+}
+.main header .dot span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.main header .play {
+  cursor: pointer;
+}
+.main header .play .icon {
+  font-size: 14px;
+  padding: 1px;
+  margin-right: 3px;
+}
+
+.main header .play .text {
+  color: rgb(38, 143, 0);
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.main header .play svg path {
+  fill: rgb(38, 143, 0);
+  transition: all 0.25s ease-out;
+}
+
+.main header .play .text {
+  color: rgb(32, 120, 0);
+}
+.main header .play:hover svg path {
+  fill: rgb(32, 120, 0);
+}
+
+.main header .actions {
+  display: flex;
+  /* border: 1px solid rgb(223, 223, 223); */
+}
+
+.main header .first .actions .btn_list {
+  display: flex;
+}
+
+.main header .first .actions .btn_div {
+  padding-right: 0.25rem;
+}
+.main header .first .actions .btn_div:nth-last-child(2) {
+  padding-right: 0;
+}
+.main header .first .actions .btn_div:last-child {
+  padding-right: 0;
+  margin-left: 1.75rem;
+  margin-right: 0.25rem;
+}
+
+.main header .first .actions button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+}
+
+.main header .first .actions .icon {
+  display: block;
+  padding: 0.5rem 0.125rem;
+}
+
+.main header .first .actions button path {
+  fill: #a8a8a8;
+}
+
+.main header .first .actions button:hover path {
+  fill: #080808;
+}
+
+.main header .first .actions .btn_div:last-child path {
+  fill: #7e7e7e;
+}
+.main header .first .actions .btn_div:last-child button:hover path {
+  fill: #080808;
+}
+
+.main header .first .actions .more_btn {
+  margin-left: 1rem;
+}
+.main header .first .actions .more_btn path {
+  fill: #7e7e7e;
+}
+
+.main header .second {
+  display: none;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.main header .second .btn_div:not(.saveStory) {
+  padding-right: 0.75rem;
+}
+
+.main header .second .btn_div button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+}
+
+.main header .second .btn_div:not(.saveStory) button .icon {
+  display: block;
+  padding: 0.5rem 0.125rem;
+}
+
+.main header .second .saveStory {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.main header .second .saveStory button {
+  display: flex;
+  align-items: center;
+
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  color: #757575;
+
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.9375rem;
+
+  border-radius: 2rem;
+
+  border: 1px solid rgba(230, 230, 230);
+}
+
+.main header .second .saveStory button span {
+  margin-right: 0.5rem;
+}
+
+.main header .second .saveStory path {
+  fill: #757575;
+}
+
+.main header .second .saveStory button:hover {
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.main header .second .btn_div:not(.saveStory) button:hover path {
+  fill: #080808;
+}
+
+.main section .title h1 {
+  /* margin-bottom: 0.25rem; */
+}
+.main section .title h2 {
+  font-weight: lighter;
+  font-size: 1.375rem;
+  font-family: messina;
+  line-height: 1.2727;
+  color: #757575;
+}
+.main section .title div:first-child {
+  padding-bottom: 0.75rem;
+}
+
+.main section .content {
+}
+.main section .content p {
+  font-family: var(--font-p);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: -0.1px;
+  color: #292929;
+
+  margin-top: 2.5rem;
+}
+
+.main section .content p:first-child span {
+  float: left;
+  line-height: 54.8px;
+  font-size: 66px;
+  letter-spacing: -0.1px;
+  margin-right: 12px;
+
+  position: relative;
+  top: 5px;
+}
+
+.main section .content h2 {
+  font-family: messina_black;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #292929;
+}
+
+@media screen and (max-width: 1240px) {
+  .rightbar {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .layout {
+    flex-direction: column;
+  }
+  .leftbar {
+    display: none;
+  }
+  .rightbar {
+    display: none;
+  }
+  .main {
+    padding-top: 2rem;
+  }
+  .main header .author .follow {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .section {
+    margin: 0 1.5rem;
+  }
+
+  .main header .first .actions .btn_list {
+    display: none;
+  }
+
+  .main header .second {
+    display: flex;
+  }
+}

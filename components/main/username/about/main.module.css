@@ -1,0 +1,152 @@
+.section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.section .inner {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  min-width: 100px;
+  display: block;
+  margin: 0 4rem;
+  min-height: 100px;
+  background-color: rgb(251, 251, 251);
+}
+
+
+/* =========== ABOUT =========== */
+
+.body {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  margin-bottom: 1.125rem;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.body .wrapper{
+  width: 60%;
+  text-align: center;
+}
+
+.body h2 {
+  font-weight: normal;
+  font-family: messina_black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.body .text {
+  padding: 1.25rem 0;
+}
+
+.body p {
+  font-family: messina;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #757575;
+}
+
+.body button {
+  width: 140px;
+  padding: 4px 12px 6px;
+  font-size: 0.875rem;
+  font-family: messina;
+  color: white;
+  background-color: rgb(26, 137, 23);
+  border: 1px solid rgb(26, 137, 23);
+  box-sizing: border-box;
+  border-radius: 99em;
+  cursor: pointer;
+}
+
+
+/* ======= footer ======= */
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  padding-top: 0.35rem;
+}
+.footer button {
+  font-family: messina;
+  font-size: 1rem;
+  color: rgba(26, 137, 23, 1);
+  cursor: pointer;
+}
+
+.footer .dot {
+  font-family: charter;
+  margin: 0 0.75rem;
+  line-height: 1.5rem;
+  color: rgba(26, 137, 23, 1)
+}
+
+
+/* ========== MEDIA QUERY ========= */
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 728px) {
+  .section .inner {
+    margin: 0 1.5rem;
+  }
+
+  .story .body > .right {
+    margin-left: 1.5rem;
+  }
+
+  .story .body h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .story .body p {
+    display: none;
+  }
+
+  .story .thumbnail {
+    width: 56px;
+    height: 56px;
+  }
+
+  .story .title {
+    padding-bottom: 0;
+  }
+
+  .story .footer {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .section .inner {
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+}
+
+@media screen and (max-width: 552px) {
+  .body .wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .story .footer .dot {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 348px) {
+}
